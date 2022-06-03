@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sheetstyle/style.css" />
+<!-- HEAD-->
+    <link rel="stylesheet" href="/sheetstyle/filters.css">
+    <link type="" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tipos de Bares</title>
+  </head>
+
+  <body>
+    <!--BARRA NAVEGACIÓN-->
+    <nav class="nav-navbar">
+      <div class="nav__logo">
+        <a href="/index.html" id="navbar__logo">
+          <img src="/images/detranquis_logo.png" class="nav__logo-img" alt="" />
+        </a>
+      </div>
+      <ul class="nav__menu" id="menu">
+        <li class="nav__link">
+          <a class="atop" href="/pages/zonas.html">Zonas</a>
+        </li>
+        <li class="nav__link">
+          <a class="atop" href="/pages/sobreNosotros.html">Sobre De Tranquis</a>
+        </li>
+      </ul>
+
+      <div class="nav__buttons">
+        <a href="" class="nav__button">Regístrate</a>
+        <a href="/pages/login.html" class="nav__button nav__button--bold"
+          >Inicia Sesión</a
+        >
+      </div>
+      <div class="menu-bar">
+        <i class="fas fa-bars" id="menu-bar"></i>
+      </div>
+    </nav>
+
+    <!--TIPO DE BARES-->
+  <!--|_____ FILTER _____|-->
+  <div class="menu-filtros">
+    <div class="btn-group">
+      <div class="services" id="services">
+        <h1>Tipos de Bares</h1>
+        <section class="iconos">
+          <div class="container-bares filtering col-sm-12 text-center">
+            
+              <span data-filter="*" class="active">
+                <i class="fa-solid fa-globe"></i>
+                <a href="*" class="filters-btn">Todo</a>
+              </span>
+              <span data-filter=".cerveza" class="">
+                <i class="fa-solid fa-beer-mug-empty"></i>
+                <a href=".cerveza" class="filters-btn">Cerveceria</a></span>
+              <span data-filter=".vino" class="">
+                <i class="fa-solid fa-wine-glass"></i>
+                <a href="Vino" class="filters-btn">Vinoteca</a></span>
+              <span data-filter=".cocktails" class="">
+                <i class="fa-solid fa-martini-glass-citrus"></i>
+                <a href="Cocktails" class="filters-btn">Cockteleria</a></span>
+              <span data-filter=".sportsbar" class="">
+                <i class="fa-solid fa-basketball"></i>
+                <a href="SportsBar" class="filters-btn">Sport Bar</a></span>
+              <span data-filter=".chiringuito" class="">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <a href="Chiringuito" class="filters-btn">Chiringuito</a></span>
+              <span data-filter=".rooftops" class="">
+                <i class="fa-solid fa-hotel"></i>
+                <a href="Rooftops" class="filters-btn">Rooftops</a></span>
+              <span data-filter=".otros" class="">
+                <i class="fa-solid fa-map"></i>
+                <a href="Otros" class="filters-btn">Otros</a></span>
+             
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!--|_____ FILTER _____|-->
+
+
+  <div class="filter-container">
+    <!--|_____ PRECIO _____|-->
+    <div class="cont__precio col-span-3 ">
+      <span class="precio__filtro">PRECIO</span>
+      <div class="precio__bar">
+        <input class="filtro" value="$" type="checkbox" id="box-1">
+        <label  for="box-1">$</label>
+      </div>
+      <div class="precio__bar col-span-3">
+        <input class="filtro" value="$$" type="checkbox" id="box-2">
+        <label for="box-2">$$</label>
+      </div>
+      <div class="precio__bar col-span-3">
+        <input class="filtro" value="$$$" type="checkbox" id="box-3">
+        <label for="box-3">$$$</label>
+      </div>
+      <div class="precio__bar col-span-3">
+        <input class="filtro" value="$$$$" type="checkbox" id="box-4">
+        <label for="box-4">$$$$</label>
+      </div>
+    </div>
+    <hr>
+    <!--|_____ ZONA _____|-->
+    <div class="cont__zona col-span-3">
+      <span class="precio__zona">ZONA</span>
+      <div class="col-span-2 mt-3">
+        <input class="filtro" value="Born" type="checkbox" id="box-5" value="born">
+        <label for="box-5">Born</label>
+      </div>
+      <div class="col-span-2">
+        <input class="filtro" value="Gótico" type="checkbox" id="box-6">
+        <label for="box-6">Gótico</label>
+      </div>
+      <div class="col-span-2">
+        <input class="filtro" value="Gràcia" type="checkbox" id="box-7">
+        <label for="box-7">Gràcia</label>
+      </div>
+    </div>
+    <div class="col-span-2">
+      <input class="filtro" value="Poble Nou" type="checkbox" id="box-7">
+      <label for="box-7">Poble Nou</label>
+    </div>
+    <div class="col-span-2">
+      <input class="filtro" value="Raval" type="checkbox" id="box-7">
+      <label for="box-7">Raval</label>
+    </div>
+
+    <div class="col-span-2">
+      <input class="filtro" value="Barceloneta" type="checkbox" id="box-7">
+      <label for="box-7">Barceloneta</label>
+    </div>
+
+    <div class="col-span-2">
+      <input class="filtro" value="Port Olimpic" type="checkbox" id="box-7">
+      <label for="box-7">Port Olimpic</label>
+    </div>
+
+    <div class="col-span-2">
+      <input class="filtro" value="Poble Sec" type="checkbox" id="box-7">
+      <label for="box-7">Poble Sec</label>
+    </div>
+
+    <div class="col-span-2">
+      <input class="filtro" value="Forum" type="checkbox" id="box-7">
+      <label for="box-7">Forum</label>
+    </div>
+
+    <div class="col-span-2">
+      <input class="filtro" value="Montjuic" type="checkbox" id="box-7">
+      <label for="box-7">Montjuic</label>
+    </div>
+
+    <hr>
+    <!--|_____ CIUDADE _____|-->
+    <!-- <div class="grid grid-cols-3 gap-y-3 mt-12">
+                                <span class="col-span-3 text-xl text-gray-700 pb-2 border-y-2 border-green-200 ">Ciudad</span>
+                                <select class="col-span-3 border bg-white rounded px-3 py-2 outline-none mt-4 ml-5 w-4/5">
+                                <option class="py-1">Todas</option>
+                                <option class="py-1">Barcelona</option>
+                                <option class="py-1">###</option>
+                                </select>
+                            </div> -->
+
+    <!--|_____ BUTTON _____|-->
+    <div class="button__filter">
+      <!--  <button class="reset" id="#">Reset</button> -->
+      <button class="Buscar" id="##"> Buscar </button>
+    </div>
+  </div>
+
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <!-- <p class="footer">Sobre Nosotros</p> -->
+        <div class="footer__links">
+          <a href="" class="footer__link">Contáctanos</a>
+          <a href="" class="footer__link">Cómo funciona</a>
+          <a href="" class="footer__link">Añade tu bar</a>
+          <a href="" class="footer__link">Únete</a>
+        </div>
+
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="/" id="footer__logo">DE TRANQUIS</a>
+            </div>
+            <p class="website__rights">
+              © DE TRANQUIS 2022. All rights reserved
+            </p>
+            
+          </div>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/scripts.js"></script>
+=======
+    <!-- SCRIPTS-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+    <script src="/js/ui.js"></script>
+>>>>>>> 8b5a8715f90f9a65ab082566c57e99e23343faba
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+  </body>
+</html>
